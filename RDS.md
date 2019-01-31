@@ -1,4 +1,4 @@
-Migrate to RDS
+Migrate to RDS [reference](https://www.digitalocean.com/community/tutorials/how-to-backup-postgresql-databases-on-an-ubuntu-vps)
 
 1.Backup<br/>`pg_dump -Fc "database name" > backup.dump`
 
