@@ -26,5 +26,7 @@ SELECT exec('ALTER TABLE ' || quote_ident(s.nspname) || '.' || quote_ident(s.rel
     relkind IN ('r','S','v') ORDER BY relkind = 'S')
 s;
 
+ALTER TABLE public.spatial_ref_sys OWNER TO rds_superuser;
+GRANT SELECT, INSERT ON TABLE public.spatial_ref_sys TO public;
 ```
 
